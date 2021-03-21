@@ -9,8 +9,14 @@ class SpaceX extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        textTheme: TextTheme(
+          headline4: TextStyle(
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ),
       home: HomePage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
