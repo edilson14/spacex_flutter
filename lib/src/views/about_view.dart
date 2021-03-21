@@ -22,10 +22,13 @@ class _AboutPageState extends State<AboutPage> {
             SizedBox(
               height: 160,
             ),
-            Text(
-              'About Space X',
-              style: Theme.of(context).textTheme.headline4,
-            )
+            Container(
+              color: Colors.transparent,
+              child: Text(
+                'About Space X',
+                style: Theme.of(context).textTheme.headline4,
+              ),
+            ),
           ],
         ),
       ],

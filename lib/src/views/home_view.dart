@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
     AboutPage(),
   ];
 
-  changePage(int index) {
+  void _changePage(int index) {
     setState(() {
       _currentPageIndex = index;
     });
@@ -28,11 +28,12 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: _pages[_currentPageIndex],
       bottomNavigationBar: BottomNavigationBar(
-        onTap: changePage,
+        onTap: _changePage,
         currentIndex: _currentPageIndex,
         items: [
           BottomNavigationBarItem(
             icon: Icon(CupertinoIcons.rocket),
+            activeIcon: Icon(CupertinoIcons.rocket_fill),
             label: 'Lançamentos',
           ),
           BottomNavigationBarItem(
